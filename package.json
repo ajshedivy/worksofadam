@@ -36,7 +36,7 @@
 		"@astrojs/prism": "^3.1.0",
 		"@astrojs/rss": "4.0.1",
 		"astro": "4.0.8",
-		"astro-font": "^0.0.72",
+		"astro-font": "^0.1.81",
 		"remark-code-titles": "^0.1.2"
 	},
 	"devDependencies": {
