@@ -3,12 +3,14 @@ import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import tailwind from '@astrojs/tailwind'
 import { remarkReadingTime } from './src/utils/readTime.ts'
+import remarkCodeTitles from "remark-code-titles";
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://blog-template-gray.vercel.app/', // Write here your website url
+	
 	markdown: {
-		remarkPlugins: [remarkReadingTime],
+		remarkPlugins: [remarkReadingTime, remarkCodeTitles],
 		drafts: true,
 		shikiConfig: {
 			theme: 'material-theme-palenight',
